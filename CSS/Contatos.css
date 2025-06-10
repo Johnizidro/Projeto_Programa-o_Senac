@@ -1,0 +1,456 @@
+/* Atributos do corpo*/
+
+* {
+    margin: 0;
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    box-sizing: border-box;
+    transition: all 0.3s ease-in-out;
+}
+
+body {
+    background-color: #d1dfc3;}
+
+    /* Div de apresentação titulo*/
+#div1 {
+    padding: 50px;
+    padding-bottom: 30px;
+    text-align: center;
+    line-height: 1.6;
+}
+
+/* Barra de pesquisa*/
+#barra-pesquisa {
+    display: flex;
+    align-items: center;
+    margin-left: 320px;
+    background-color: #f1ede6;
+    border-radius: 30px;
+    overflow: hidden;
+    height: 42px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    flex-shrink: 0;
+}
+
+#barra-pesquisa input[type="text"] {
+    border: none;
+    padding: 10px 16px;
+    font-size: 16px;
+    outline: none;
+    width: 400px;
+    border-radius: 30px 0 0 30px;
+}
+
+#barra-pesquisa button {
+    background-color: #14552d;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 0 30px 30px 0;
+    transition: background-color 0.3s ease;
+}
+
+#barra-pesquisa button:hover {
+    background-color: #1c7346;
+}
+
+/* conteudo inicial*/
+#div2 {
+    border: 2px solid #ffffff;
+    background-color: #f9f5ef;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 80vw; 
+    border-radius: 16px;
+    padding: 30px;
+    margin: 10px auto;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+    flex-grow: 1; 
+}
+
+#div2 p {
+    padding: 20px;
+    font-size: 18px;
+    color: #333;
+    line-height: 1.6;
+}
+
+#div2 h2 {
+    padding-left: 20px;
+    font-size: 24px;
+    color: #14552d;
+}
+
+
+/* Titulos*/
+h1, h2 {
+    color: #0c3a1d;
+}
+
+/* Cabeçalho*/
+#comeco {
+    position: relative;         
+    padding: 40px 0;
+    background-position: center;
+    color: #14552d;
+    text-align: center;
+    z-index: 1;                  
+}
+#comeco h1{
+ 
+    z-index: 1;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+
+}
+
+#comeco::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/imagens/27014004-biologia-rabisco-definir-colecao-do-mao-desenhado-elementos-ciencia-biologia-ilustracao-isolado-em-uma-branco-fundo-vetor.jpg');
+    background-position: center;
+    background-size: cover;
+    opacity: 0.3;                 
+    filter: blur(5px);            
+    z-index: -1;                  
+}
+
+/* Barra de navegação*/
+#nave {
+    background-color: #0c3a1d;
+    padding: 10px 0;
+    display: flex;
+    justify-content: left;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+#nave a {
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: flex; /* Para alinhar o ícone e o texto */
+    align-items: center; /* Centraliza o ícone verticalmente */
+    margin-left:10px ;
+}
+
+#nave a img.icon {
+    width: 20px; /* Define o tamanho do ícone */
+    height: 20px; /* Define o tamanho do ícone */
+    margin-right: 8px; /* Espaço entre o ícone e o texto */
+}
+
+#nave a:hover {
+    background-color: #14552d;
+    transform: scale(1.05);
+}
+
+/* Div pré finalização*/
+#finalização {
+    background-color: rgba(241, 237, 230, 0.9);
+    padding: 40px 20px;
+    margin-top: 50px;
+    box-shadow: 2px 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+#finalização h2 {
+    color: #14552d;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#finalização p {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+#finalização a {
+    text-decoration: none;
+    color: #14552d;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+#finalização a:hover {
+    text-decoration: underline;
+}
+
+/* Rodapé*/
+#rodape {
+    background-color: #0c3a1d;
+    color: whitesmoke;
+    padding: 20px;
+    font-size: 16px;
+    border-top: 1px solid #0c3b22;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+}
+
+#rodape a {
+    color: #c3e9dd;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 10px;
+}
+.conteudo-rodape {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: left;
+}
+
+.rodape-esquerda,
+.rodape-centro,
+.rodape-direita {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rodape-esquerda {
+    justify-content: flex-start;
+}
+
+.rodape-centro {
+    justify-content: center;
+}
+
+.rodape-direita {
+    justify-content: flex-end;
+}
+
+.social-icon {
+    width: 35px;
+    height: 35px;
+    margin-left: 10px;
+    transition: transform 0.2s ease;
+   
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+    border-radius: 20px;
+}
+
+/* Div de contatos*/
+#contato {
+    background-color: #f9f5ef;
+    padding: 40px;
+    margin-top: 40px;
+    border-radius: 0px 16px 18px 0px;
+    width: 100%;
+    max-width: 1000px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+#contato h2 {
+    color: #14552d;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+#contato form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Atributos dos inputs e labels*/
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-weight: bold;
+    color: #14552d;
+    margin-bottom: 5px;
+    font-size: 19px;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    resize: vertical;
+}
+
+/* Botao de envio*/
+#contato button {
+    padding: 12px;
+    background-color: #14552d;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#contato button:hover {
+    background-color: #1c7346;
+}
+
+#container-contato{
+    display: flex;
+}
+
+/* Div imagem lateral*/
+#container-contato img{
+    margin-top: 40px;
+    margin-left: 40px;
+    border-radius: 16px 0px 0px 16px;
+    width: 100%;
+    max-width: 800px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    filter: blur(2px);
+  
+}
+
+/* Responsividade*/
+@media (max-width: 1200px) {
+    #comeco h1 {
+        font-size: 20px;
+    }
+
+    #nave {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #div1 p {
+        font-size: 14px;
+    }
+
+    #contato h2 {
+        font-size: 20px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        font-size: 14px;
+    }
+
+    #container-contato img {
+        max-width: 100%;
+        margin-left: 0;
+        border-radius: 16px;
+        
+    }
+    #container-contato{
+        display: block;
+    }
+
+    #contato {
+        
+        max-width: 100%;
+        margin-left: 0;
+        border-radius: 16px;
+
+    }
+    }
+@media (max-width: 768px) {
+    #div2 {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    #div1 {
+        padding: 30px;
+    }
+
+    #nave {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #div2 {
+        max-width: 100%;
+    }
+
+    #container-contato {
+        flex-direction: column;
+
+    }
+
+    #container-contato img {
+        margin-left: 0;
+        max-width: 100%;
+        border-radius: 0px;
+    }
+
+    #contato h2 {
+        font-size: 20px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        font-size: 14px;
+    }
+
+    #comeco h1 {
+        font-size: 24px;
+    }
+    #contato {
+        border-radius: 0px;
+
+    }
+}
+
+@media (max-width: 480px) {
+    #comeco h1 {
+        font-size: 20px;
+    }
+
+    #nave {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #div1 p {
+        font-size: 14px;
+    }
+
+    #contato h2 {
+        font-size: 20px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        font-size: 14px;
+    }
+
+    #container-contato img {
+        max-width: 100%;
+        margin-left: 0;
+        border-radius: 16px;
+    }
+
+    #contato {
+        border-radius: 0px;
+
+    }
+    }
+
+
+

@@ -1,0 +1,569 @@
+/* Atributos do corpo*/
+
+* {
+    margin: 0;
+    margin: 0;
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    box-sizing: border-box;
+    transition: all 0.3s ease-in-out;
+}
+
+body {
+    background-color: #d1dfc3;}
+
+/* barra de pesquisa*/
+#barra-pesquisa {
+    display: flex;
+    align-items: center;
+    margin-left: 320px;
+    background-color: #f1ede6;
+    border-radius: 30px;
+    overflow: hidden;
+    height: 42px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    flex-shrink: 0;
+}
+
+#barra-pesquisa input[type="text"] {
+    border: none;
+    padding: 10px 16px;
+    font-size: 16px;
+    outline: none;
+    width: 400px;
+    border-radius: 30px 0 0 30px;
+}
+
+#barra-pesquisa button {
+    background-color: #14552d;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 0 30px 30px 0;
+    transition: background-color 0.3s ease;
+}
+
+#barra-pesquisa button:hover {
+    background-color: #1c7346;
+}
+
+/* Conteudo inicial*/
+#div2 {
+    border: 2px solid #ffffff;
+    background-color: #f9f5ef;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 80vw; 
+    border-radius: 16px;
+    padding: 30px;
+    margin: 10px auto;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+    flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin-top: 60px;
+}
+
+#div2 p {
+    padding: 20px;
+    font-size: 17px;
+    color: #333;
+    line-height: 1.6;
+}
+
+#div2 h2 {
+    padding-left: 20px;
+    font-size: 24px;
+    color: #14552d;
+}
+
+/* Atributos de imagem e texto */
+.texto, .imagem {
+    flex: 1;
+    min-width: 300px;
+    box-sizing: border-box;
+}
+
+
+.imagem img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    display: block;
+}
+
+/* Div que abriga a div2*/
+#inicio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px; 
+}
+
+/* titulos*/
+h1, h2 {
+    color: #0c3a1d;
+}
+
+
+/* Cabeçalho*/
+#comeco {
+    position: relative;         
+    padding: 40px 0;
+    background-position: center;
+    color: #14552d;
+    text-align: center;
+    z-index: 1;                  
+}
+#comeco h1{
+
+    z-index: 1;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+
+}
+
+#comeco::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/imagens/27014004-biologia-rabisco-definir-colecao-do-mao-desenhado-elementos-ciencia-biologia-ilustracao-isolado-em-uma-branco-fundo-vetor.jpg');
+    background-position: center;
+    background-size: cover;
+    opacity: 0.3;                 
+    filter: blur(5px);            
+    z-index: -1;                  
+}
+
+/* Barra de navegação*/
+#nave {
+    background-color: #14552d;
+    padding: 10px 0;
+    display: flex;
+    justify-content: left;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+#nave {
+    background-color: #0c3a1d;
+    padding: 10px 0;
+    display: flex;
+    justify-content: left;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+#nave a {
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: flex; /* Para alinhar o ícone e o texto */
+    align-items: center; /* Centraliza o ícone verticalmente */
+    margin-left:10px ;
+}
+
+#nave a img.icon {
+    width: 20px; /* Define o tamanho do ícone */
+    height: 20px; /* Define o tamanho do ícone */
+    margin-right: 8px; /* Espaço entre o ícone e o texto */
+}
+
+#nave a:hover {
+    background-color: #14552d;
+    transform: scale(1.05);
+}
+
+/* Div pré-finalização*/
+#finalização {
+    background-color: rgba(241, 237, 230, 0.9);
+    padding: 40px 20px;
+    margin-top: 50px;
+    box-shadow: 2px 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+#finalização h2 {
+    color: #14552d;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#finalização p {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+#finalização a {
+    text-decoration: none;
+    color: #14552d;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+#finalização a:hover {
+    text-decoration: underline;
+}
+
+/* rodapé*/
+#rodape {
+    background-color: #0c3a1d;
+    color: whitesmoke;
+    padding: 20px;
+    font-size: 16px;
+    border-top: 1px solid #0c3b22;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+}
+
+#rodape a {
+    color: #c3e9dd;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+
+
+.conteudo-rodape {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: left;
+}
+
+.rodape-esquerda,
+.rodape-centro,
+.rodape-direita {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rodape-esquerda {
+    justify-content: flex-start;
+}
+
+.rodape-centro {
+    justify-content: center;
+}
+
+.rodape-direita {
+    justify-content: flex-end;
+}
+
+.social-icon {
+    width: 35px;
+    height: 35px;
+    margin-left: 10px;
+    transition: transform 0.2s ease;
+   
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+    border-radius: 20px;
+}
+
+/* div pós-finalização*/
+#div3 {
+    border: 2px solid #ffffff;
+    background-color: #f9f5ef;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 100%; 
+    padding: 30px;
+    margin: 10px auto;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+    flex-grow: 1; 
+    margin-top: 60px;
+
+}
+
+#div3 p {
+    padding: 20px;
+    font-size: 18px;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+
+/* Patrocinadores*/
+#conjunto {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: space-between;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    margin-bottom: 80px;
+}
+
+.bloco {
+    width: 25%; 
+    background-color: #f9f5ef;
+    box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.3);
+    margin-left: 10px;
+    margin-right: 10px; 
+    border-radius: 10px;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+.bloco h3 { 
+    color: #14552d;
+    font-size: 24px;
+}
+
+a, .bloco {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+a:hover, .bloco:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* responsividade*/
+@media (max-width: 1200px) {
+    #comeco h1 {
+        font-size: 20px;
+    }
+
+    #nave {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #div1 p {
+        font-size: 14px;
+    }
+
+    #contato h2 {
+        font-size: 20px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        font-size: 14px;
+    }
+
+    #container-contato {
+        display: block;
+    }
+
+    #container-contato img {
+        max-width: 100%;
+        margin-left: 0;
+        border-radius: 16px;
+    }
+
+    #contato {
+        max-width: 100%;
+        margin-left: 0;
+        border-radius: 16px;
+    }
+
+    #barra-pesquisa {
+        margin-left: auto;
+        margin-right: auto;
+        width: auto;
+    }
+
+    #barra-pesquisa input[type="text"] {
+        width: 300px;
+    }
+}
+
+
+/* ===== 769px até 1200px: manter layout empilhado no #blocos ===== */
+@media (min-width: 769px) and (max-width: 1200px) {
+    #blocos {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    #div1, #div2 {
+        width: 100%;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .imagem img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 16px;
+    }
+}
+
+
+/* ===== MAX-WIDTH: 768px ===== */
+@media (max-width: 768px) {
+    #div2, #div3 {
+        width: 100%;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    #inicio, #inicio2 {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    #barra-pesquisa {
+        margin-left: auto;
+        margin-right: auto;
+        height: 38px;
+        width: 100%;
+        max-width: 400px;
+        flex-direction: row;
+    }
+
+    #barra-pesquisa input[type="text"] {
+        width: 100%;
+        font-size: 14px;
+        padding: 8px 12px;
+        border-radius: 30px 0 0 30px;
+    }
+
+    #barra-pesquisa button {
+        padding: 8px 12px;
+        font-size: 14px;
+        border-radius: 0 30px 30px 0;
+    }
+
+    .imagem img {
+        width: 100%;
+        height: auto;
+        border-radius: 16px;
+    }
+
+    .caixa {
+        width: 100%;
+    }
+
+    .form-coluna {
+        flex-direction: column;
+    }
+
+    .coluna {
+        width: 100%;
+    }
+
+    .botoes {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+/* ===== MAX-WIDTH: 480px ===== */
+@media (max-width: 480px) {
+    #comeco h1 {
+        font-size: 24px;
+    }
+
+    #nave {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #div1 p {
+        font-size: 14px;
+    }
+
+    .caixa h3 {
+        font-size: 18px;
+    }
+
+    #barra-pesquisa {
+        flex-direction: column;
+        height: auto;
+        margin-left: 10px;
+        width: 100%;
+        max-width: 320px;
+        border-radius: 20px;
+    }
+
+    #barra-pesquisa input[type="text"] {
+        width: 100%;
+        border-radius: 20px 20px 0 0;
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    #barra-pesquisa button {
+        width: 100%;
+        border-radius: 0 0 20px 20px;
+        padding: 10px;
+        font-size: 14px;
+        margin-top: 5px;
+    }
+
+    #blocos {
+        gap: 16px;
+        padding: 12px;
+    }
+
+    .imagem img {
+        border-radius: 12px;
+    }
+
+    #contato {
+        padding: 20px 10px;
+        border-radius: 0;
+    }
+
+    .form-group {
+        margin-bottom: 16px;
+    }
+}
+
+
+/* ===== MIN-WIDTH: 1201px — layout lado a lado (imagem ao lado do texto) ===== */
+@media (min-width: 1201px) {
+    #blocos {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding: 40px;
+    }
+
+    #div1, #div2 {
+        width: 48%;
+        text-align: left;
+    }
+
+    .imagem img{
+        max-width: 100%;
+        height: auto;
+        border-radius: 16px;
+    }
+
+    #barra-pesquisa {
+        margin-left: 320px;
+        margin-right: 0;
+    }
+}

@@ -147,18 +147,19 @@ h1, h2 {
 }
 
 .caixa {
-    background-color: #0c3a1d;
+    background-color: #d1dfc3;
     width: 30%; 
-    border-radius: 15px;
-    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
     margin: 20px;
     padding: 15px;
     text-align:left;
-    color: #fff;
+    color: #0c3a1d;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     box-sizing: border-box;
     font-size: 18px;
     line-height: 1.6;
+    border: #0c3a1d solid 1px;
     
 }
 
@@ -167,20 +168,25 @@ h1, h2 {
     height: 300px;
     box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease;
+    border-radius: 5px;
+}
+
+.caixa p{
+    margin-top: 5px;
 }
 
 .caixa h3 {
     font-size: 25px;
     margin-bottom: 15px;
     font-weight: bold;
-    color: #fff;
+    color: #0c3a1d;
     text-align: center;
 }
 
 .caixa hr {
     border: 0;
     height: 1px;
-    background-color: #fff;
+    background-color: #0c3a1d;
     margin: 10px 0;
 }
 
@@ -365,33 +371,97 @@ a:hover, .caixa:hover {
 
 /* Responsividade*/
 
-@media (max-width: 1024px) {
-    .video {
-        width: 48%; 
+@media (max-width: 1200px) {
+    #comeco h1 {
+        font-size: 20px;
+    }
+
+    #nave {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #div1 p {
+        font-size: 14px;
+    }
+
+    #contato h2 {
+        font-size: 20px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        font-size: 14px;
+    }
+
+    #container-contato img {
+        max-width: 100%;
+        margin-left: 0;
+        border-radius: 16px;
+        
+    }
+    #container-contato{
+        display: block;
+    }
+
+    #contato {
+        
+        max-width: 100%;
+        margin-left: 0;
+        border-radius: 16px;
+
+    }
+
+    #barra-pesquisa {
+        margin-left: 20px; /* reduz a margem para encaixar melhor */
+        width: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #barra-pesquisa input[type="text"] {
+        width: 300px; /* reduz largura do input */
     }
 }
-
 @media (max-width: 768px) {
-    .video {
-        width: 100%; 
-    }
-}
-
-
-@media (max-width: 768px) {
+    /* DIVs */
     #div2, #div3 {
         width: 100%;
         max-width: 100%;
     }
 
-    
-    #inicio,#inicio2 {
+    /* INÍCIO */
+    #inicio, #inicio2 {
         flex-direction: column; 
         gap: 30px; 
     }
 
-    #div2,#div3 {
-        max-width: 100%;  
+    /* CAIXAS */
+    .caixa {
+        width: 100%; 
+    }
+
+    /* BARRA DE PESQUISA */
+    #barra-pesquisa {
+        margin-left: auto;
+        margin-right: auto;
+        height: 38px;
+        width: 100%;
+        max-width: 400px;
+        flex-direction: row;
+    }
+
+    #barra-pesquisa input[type="text"] {
+        width: 100%;
+        font-size: 14px;
+        padding: 8px 12px;
+        border-radius: 30px 0 0 30px;
+    }
+
+    #barra-pesquisa button {
+        padding: 8px 12px;
+        font-size: 14px;
+        border-radius: 0 30px 30px 0;
     }
 }
 
@@ -412,6 +482,29 @@ a:hover, .caixa:hover {
     .caixa h3 {
         font-size: 18px;
     }
+    #barra-pesquisa {
+        flex-direction: column; /* coloca input e botão empilhados */
+        height: auto;
+        margin-left: 10px;
+        width: 100%;
+        max-width: 320px;
+        border-radius: 20px;
+    }
+
+    #barra-pesquisa input[type="text"] {
+        width: 100%;
+        border-radius: 20px 20px 0 0;
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    #barra-pesquisa button {
+        width: 100%;
+        border-radius: 0 0 20px 20px;
+        padding: 10px;
+        font-size: 14px;
+        margin-top: 5px;
+    }
 }
 
 @media (max-width: 1024px) {
@@ -423,6 +516,13 @@ a:hover, .caixa:hover {
 @media (max-width: 768px) {
     .caixa {
         width: 100%; 
+    }
+}
+
+@media (min-width: 1201px) {
+    #barra-pesquisa {
+        margin-left: 320px;
+        margin-right: 0;
     }
 }
 

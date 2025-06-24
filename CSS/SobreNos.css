@@ -345,36 +345,141 @@ a:hover, .bloco:hover {
 }
 
 /* responsividade*/
-@media (max-width: 1024px) {
-    .video {
-        width: 48%; 
+@media (max-width: 1200px) {
+    #comeco h1 {
+        font-size: 20px;
+    }
+
+    #nave {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #div1 p {
+        font-size: 14px;
+    }
+
+    #contato h2 {
+        font-size: 20px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        font-size: 14px;
+    }
+
+    #container-contato {
+        display: block;
+    }
+
+    #container-contato img {
+        max-width: 100%;
+        margin-left: 0;
+        border-radius: 16px;
+    }
+
+    #contato {
+        max-width: 100%;
+        margin-left: 0;
+        border-radius: 16px;
+    }
+
+    #barra-pesquisa {
+        margin-left: auto;
+        margin-right: auto;
+        width: auto;
+    }
+
+    #barra-pesquisa input[type="text"] {
+        width: 300px;
     }
 }
 
-@media (max-width: 768px) {
-    .video {
-        width: 100%; 
+
+/* ===== 769px até 1200px: manter layout empilhado no #blocos ===== */
+@media (min-width: 769px) and (max-width: 1200px) {
+    #blocos {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    #div1, #div2 {
+        width: 100%;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .imagem img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 16px;
     }
 }
 
 
+/* ===== MAX-WIDTH: 768px ===== */
 @media (max-width: 768px) {
     #div2, #div3 {
         width: 100%;
         max-width: 100%;
+        text-align: center;
     }
 
-    
-    #inicio,#inicio2 {
-        flex-direction: column; 
-        gap: 30px; 
+    #inicio, #inicio2 {
+        flex-direction: column;
+        gap: 30px;
     }
 
-    #div2,#div3 {
-        max-width: 100%;  
+    #barra-pesquisa {
+        margin-left: auto;
+        margin-right: auto;
+        height: 38px;
+        width: 100%;
+        max-width: 400px;
+        flex-direction: row;
+    }
+
+    #barra-pesquisa input[type="text"] {
+        width: 100%;
+        font-size: 14px;
+        padding: 8px 12px;
+        border-radius: 30px 0 0 30px;
+    }
+
+    #barra-pesquisa button {
+        padding: 8px 12px;
+        font-size: 14px;
+        border-radius: 0 30px 30px 0;
+    }
+
+    .imagem img {
+        width: 100%;
+        height: auto;
+        border-radius: 16px;
+    }
+
+    .caixa {
+        width: 100%;
+    }
+
+    .form-coluna {
+        flex-direction: column;
+    }
+
+    .coluna {
+        width: 100%;
+    }
+
+    .botoes {
+        flex-direction: column;
+        align-items: center;
     }
 }
 
+
+/* ===== MAX-WIDTH: 480px ===== */
 @media (max-width: 480px) {
     #comeco h1 {
         font-size: 24px;
@@ -392,16 +497,73 @@ a:hover, .bloco:hover {
     .caixa h3 {
         font-size: 18px;
     }
-}
 
-@media (max-width: 1024px) {
-    .caixa {
-        width: 48%;
+    #barra-pesquisa {
+        flex-direction: column;
+        height: auto;
+        margin-left: 10px;
+        width: 100%;
+        max-width: 320px;
+        border-radius: 20px;
+    }
+
+    #barra-pesquisa input[type="text"] {
+        width: 100%;
+        border-radius: 20px 20px 0 0;
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    #barra-pesquisa button {
+        width: 100%;
+        border-radius: 0 0 20px 20px;
+        padding: 10px;
+        font-size: 14px;
+        margin-top: 5px;
+    }
+
+    #blocos {
+        gap: 16px;
+        padding: 12px;
+    }
+
+    .imagem img {
+        border-radius: 12px;
+    }
+
+    #contato {
+        padding: 20px 10px;
+        border-radius: 0;
+    }
+
+    .form-group {
+        margin-bottom: 16px;
     }
 }
 
-@media (max-width: 768px) {
-    .caixa {
-        width: 100%; 
+
+/* ===== MIN-WIDTH: 1201px — layout lado a lado (imagem ao lado do texto) ===== */
+@media (min-width: 1201px) {
+    #blocos {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding: 40px;
+    }
+
+    #div1, #div2 {
+        width: 48%;
+        text-align: left;
+    }
+
+    .imagem img{
+        max-width: 100%;
+        height: auto;
+        border-radius: 16px;
+    }
+
+    #barra-pesquisa {
+        margin-left: 320px;
+        margin-right: 0;
     }
 }

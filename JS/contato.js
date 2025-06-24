@@ -1,18 +1,25 @@
-$(document).ready(function() {
-  $('#But123').click(function(event) {
-    event.preventDefault();
+document.addEventListener('DOMContentLoaded', function () {
+  const form = document.getElementById('form-contato');
 
-    // Se não existe o parágrafo, cria
-    if ($('#mensagem-status').length === 0) {
-      $('<p id="mensagem-status" style="color: green; font-weight: bold;"></p>').insertAfter('#But123');
-    }
+  form.addEventListener('submit', function (e) {
+      e.preventDefault();
 
-    $('#mensagem-status').text('Mensagem enviada com sucesso!').show();
+      const campos = ['nome', 'email', 'telefone', 'cargo', 'estado', 'motivo', 'mensagem'];
+      let validado = true;
 
-    $('#formulario')[0].reset();
+      for (let id of campos) {
+          const campo = document.getElementById(id);
+          if (!campo.value.trim()) {
+              alert(`Por favor, preencha o campo: ${id}`);
+              campo.focus();
+              validado = false;
+              break;
+          }
+      }
 
-    setTimeout(function() {
-      $('#mensagem-status').fadeOut();
-    }, 3000);
+      if (validado) {
+          alert('Formulário enviado com sucesso!');
+          form.reset(); // Limpa todos os campos do formulário
+      }
   });
 });

@@ -507,6 +507,17 @@ h1, h2 {
         border-radius: 16px;
 
     }
+
+    #barra-pesquisa {
+        margin-left: 20px; /* reduz a margem para encaixar melhor */
+        width: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #barra-pesquisa input[type="text"] {
+        width: 300px; /* reduz largura do input */
+    }
     }
 @media (max-width: 768px) {
     #div2 {
@@ -554,6 +565,23 @@ h1, h2 {
         border-radius: 0px;
 
     }
+    #barra-pesquisa {
+        margin-left: 10px;
+        height: 38px;
+        width: 100%;
+        max-width: 400px;
+    }
+
+    #barra-pesquisa input[type="text"] {
+        width: 100%; /* ocupa toda a largura disponível */
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+
+    #barra-pesquisa button {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -588,6 +616,29 @@ h1, h2 {
     #contato {
         border-radius: 0px;
 
+    }
+    #barra-pesquisa {
+        flex-direction: column; /* coloca input e botão empilhados */
+        height: auto;
+        margin-left: 10px;
+        width: 100%;
+        max-width: 320px;
+        border-radius: 20px;
+    }
+
+    #barra-pesquisa input[type="text"] {
+        width: 100%;
+        border-radius: 20px 20px 0 0;
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    #barra-pesquisa button {
+        width: 100%;
+        border-radius: 0 0 20px 20px;
+        padding: 10px;
+        font-size: 14px;
+        margin-top: 5px;
     }
     }
 

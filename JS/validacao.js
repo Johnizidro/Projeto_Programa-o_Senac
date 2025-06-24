@@ -1,46 +1,58 @@
-$(document).ready(function(){ 
-    $('#formulario').submit(function(e){ 
-      // Pega os valores dos campos
-      let nome = $('#nome').val().trim();
-      let email = $('#email').val().trim();
-      let Telefone = $('#Telefone').val().trim();
-      let Estado = $('#Estado').val().trim();
-      let Motivo = $('#Motivo').val().trim();
-      
-      // Validações
-      if(nome === '') {
-        alert('Preencha o campo nome!');
-        e.preventDefault();
-        return;
+document.addEventListener('DOMContentLoaded', function () {
+  const form = document.getElementById('form');
+
+  form.addEventListener('submit', function (e) {
+      e.preventDefault(); // Impede envio automático
+
+      // Captura os campos
+      const nome = document.getElementById('text');
+      const email = document.getElementById('email2');
+      const telefone = document.getElementById('tel');
+      const idade = document.getElementById('number');
+      const data = document.getElementById('date');
+      const hora = document.getElementById('time');
+      const estado = document.getElementById('estado');
+      const genero = document.querySelector('input[name="genero"]:checked');
+      const mensagem = document.getElementById('mensagem');
+
+      // Verificações
+      if (!nome.value.trim()) {
+          alert('Por favor, preencha o nome.');
+          nome.focus();
+          return;
       }
-  
-      if(email === '') {
-        alert('Preencha o campo email!');
-        e.preventDefault();
-        return;
+
+      if (!email.value.trim()) {
+          alert('Informe um e-mail válido.');
+          email.focus();
+          return;
       }
-  
-      if(Telefone === '') {
-        alert('Preencha o campo telefone!');
-        e.preventDefault();
-        return;
+
+      if (!estado.value) {
+          alert('Selecione um tema.');
+          estado.focus();
+          return;
       }
-  
-      if(Estado === '') {
-        alert('Preencha o campo estado!');
-        e.preventDefault();
-        return;
+
+      if (!genero) {
+          alert('Selecione um gênero.');
+          return;
       }
-  
-      if(Motivo === '') {
-        alert('Preencha o campo motivo!');
-        e.preventDefault();
-        return;
+
+      if (!mensagem.value.trim()) {
+          alert('A mensagem de recomendação é obrigatória.');
+          mensagem.focus();
+          return;
       }
-  
-      // Aqui, se precisar validar o campo "cargo" pelo name, você pode usar:
-      // let cargo = $('[name="cargo"]').val().trim();
-      // e validar da mesma forma.
-  
-    });
+
+      // Tudo validado
+      alert('Formulário enviado com sucesso!');
+      form.reset();
   });
+
+  // Função auxiliar para validar e-mail
+  function validateEmail(email) {
+      const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      return re.test(email.toLowerCase());
+  }
+});

@@ -6,6 +6,8 @@
     <title>BioInformação</title>
     <link rel="stylesheet" href="/CSS/Recomendacoes.css">
     <link rel="icon" href="/imagens/leaf.png">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
 </head>
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
@@ -55,18 +57,18 @@
 
     <div id="contato">
    
-        <form action="#" method="post" enctype="multipart/form-data">
+        <form action="#" method="post" enctype="multipart/form-data" id="form">
             <div class="form-coluna">
                 <!-- Coluna 1 -->
                 <div class="coluna">
                     <div class="form-group">
                         <label for="text">Nome:</label>
-                        <input type="text" id="text" name="texto" required>
+                        <input type="text" id="text" name="texto">
                     </div>
     
                     <div class="form-group">
                         <label for="email2">Email:</label>
-                        <input type="email" id="email2" name="email2" required>
+                        <input type="email" id="email2" name="email2">
                     </div>
     
                     <div class="form-group">
@@ -96,7 +98,7 @@
     
                     <div class="form-group">
                         <label for="estado">Selecione um tema:</label>
-                        <select id="estado" name="estado" required>
+                        <select id="estado" name="estado">
                             <option value="">-- Escolha uma opção --</option>
                             <option value="ac">BioTecnologia</option>
                             <option value="al">Parasitologia</option>
@@ -129,7 +131,7 @@
     
             <div class="form-group">
                 <label for="mensagem">Recomendaçôes:</label>
-                <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+                <textarea id="mensagem" name="mensagem" rows="5"></textarea>
             </div>
     
             <input type="hidden" name="formulario" value="contato-avancado">
@@ -172,6 +174,10 @@
         </div>
     </div>
 </footer>
+
+<script src="/JS/validacao.js"></script>
+<script src="/JS/div.js"></script>
+
 
 
 </body>

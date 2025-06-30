@@ -19,7 +19,7 @@ body {
     align-items: center;
     margin-left: 320px;
     background-color: #f1ede6;
-    border-radius: 30px;
+    border-radius: 15px;
     overflow: hidden;
     height: 42px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
@@ -42,7 +42,7 @@ body {
     padding: 10px 16px;
     cursor: pointer;
     font-size: 16px;
-    border-radius: 0 30px 30px 0;
+    border-radius: 0 15px 15px 0;
     transition: background-color 0.3s ease;
 }
 
@@ -57,7 +57,7 @@ body {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
     width: 100%;
     max-width: 80vw; 
-    border-radius: 16px;
+    border-radius: 8px;
     padding: 30px;
     margin: 10px auto;
     transition: all 0.3s ease;
@@ -95,7 +95,7 @@ body {
 .imagem img {
     width: 100%;
     height: auto;
-    border-radius: 12px;
+    border-radius: 8px;
     display: block;
 }
 
@@ -324,10 +324,12 @@ h1, h2 {
     box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.3);
     margin-left: 10px;
     margin-right: 10px; 
-    border-radius: 10px;
+    border-radius: 5px;
     text-align: center;
     margin: 10px;
     padding: 10px;
+    overflow-wrap: break-word;
+    overflow: hidden;
 }
 
 .bloco h3 { 

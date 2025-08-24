@@ -40,5 +40,5 @@ Este projeto está licenciado sob a licença MIT. Veja o arquivo LICENSE para ma
 ## Protótipo no Figma
 
 <a href="https://www.figma.com/design/3C6tOp8lHuh0LeYIWMg2d5/Bioinforma%C3%A7%C3%A3o?node-id=1-3&t=Jh7GuUHTp3y8NJ7g-1" target="_blank">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg" width="120" alt="Abrir no Figma"/>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg" width="80" alt="Abrir no Figma"/>
 </a>

@@ -2,6 +2,10 @@
 
 Este projeto é um site educativo focado em apresentar conceitos básicos sobre o universo da biologia. O site possui conteúdo organizado em cinco páginas, com tabelas, imagens e vídeos para facilitar o aprendizado.
 
+<p align="center">
+  <img alt="License" src="capa_readme.png">
+</p>
+
 ## Conteúdo 🧪
 
 - Informações introdutórias sobre biologia 🧬

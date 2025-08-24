@@ -36,3 +36,8 @@ Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou enviar
 
 ## Licença 🔒 
 Este projeto está licenciado sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
+
+## Protótipo no Figma
+
+[![Abrir no Figma](https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg)]([https://www.figma.com/file/SEU-LINK-AQUI](https://www.figma.com/design/3C6tOp8lHuh0LeYIWMg2d5/Bioinforma%C3%A7%C3%A3o?node-id=1-3&t=Jh7GuUHTp3y8NJ7g-1))
+
